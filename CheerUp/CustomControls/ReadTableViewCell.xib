@@ -49,7 +49,7 @@
                             <constraint firstAttribute="height" constant="40" id="yt0-jG-5kU"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windows_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qld-rU-19g">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qld-rU-19g">
                         <rect key="frame" x="8" y="85" width="304" height="152"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="qld-rU-19g" secondAttribute="height" multiplier="2:1" id="gga-Av-fHI"/>
@@ -126,6 +126,17 @@
                     <constraint firstItem="GbD-yv-qaJ" firstAttribute="top" secondItem="Kbe-Hi-lVY" secondAttribute="bottom" constant="23" id="vy6-q5-i3H"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bookmarkButton" destination="wPB-oq-dkS" id="EQw-Ym-9QL"/>
+                <outlet property="contentImgView" destination="qld-rU-19g" id="eqM-Bm-75E"/>
+                <outlet property="dateLabel" destination="gkI-Na-luf" id="77p-qt-HGT"/>
+                <outlet property="descriptionTxtView" destination="Kbe-Hi-lVY" id="AuG-cE-zRg"/>
+                <outlet property="headingLabel" destination="URO-3g-hjw" id="qVP-IQ-K3H"/>
+                <outlet property="heartButton" destination="GbD-yv-qaJ" id="cav-Hr-AKm"/>
+                <outlet property="profileImageView" destination="oLp-Lq-byY" id="vKZ-5D-zjW"/>
+                <outlet property="profileNameLabel" destination="zUs-JM-xiJ" id="VoA-zA-krv"/>
+                <outlet property="readMoreButton" destination="zQD-2C-jeB" id="yMT-OB-eEo"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
@@ -133,6 +144,5 @@
         <image name="massage_icon.png" width="48" height="68"/>
         <image name="orange_footer_bar.png" width="900" height="118"/>
         <image name="user_icon.png" width="93" height="93"/>
-        <image name="windows_photo.png" width="867" height="489"/>
     </resources>
 </document>

@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  CheerUp
+//
+//  Created by Dipen Sekhsaria on 25/10/16.
+//  Copyright © 2016 stardeep. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "SVProgressHUD.h"
+#import "Settings.h"
+#import "DataSyncManager.h"
+#import "SharedClass.h"
+#import "Constants.h"
+#import <UIImageView+AFNetworking.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

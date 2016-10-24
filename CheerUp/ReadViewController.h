@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReadViewController : UIViewController
+@interface ReadViewController : UIViewController <DataSyncManagerDelegate> {
+    NSMutableArray* contentArr;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *contentTableView;
 

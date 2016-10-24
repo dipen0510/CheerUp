@@ -8,6 +8,7 @@
 
 #import "ReadViewController.h"
 #import "ReadTableViewCell.h"
+#import <UIImageView+AFNetworking.h>
 
 @interface ReadViewController ()
 
@@ -18,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setupInitalView];
+    [self startGetBlogService];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,6 +33,7 @@
 - (void) setupInitalView {
     
     self.contentTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    contentArr = [[NSMutableArray alloc] init];
     
 }
 
@@ -50,7 +56,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
+    return contentArr.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -85,11 +91,104 @@
 
 - (void) displayContentForCell:(ReadTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
+    cell.descriptionTxtView.editable = NO;
+    cell.descriptionTxtView.userInteractionEnabled = NO;
+    
     //POPULATE CONTENT
     
+    NSMutableDictionary* dict = [[NSMutableDictionary alloc] initWithDictionary:[contentArr objectAtIndex:indexPath.row]];
+    
+    cell.headingLabel.text = [dict valueForKey:@"TITLE"];
+    cell.profileNameLabel.text = [dict valueForKey:@"NAME_BLOGGER"];
+    cell.dateLabel.text = [dict valueForKey:@"DATE_CREATED"];
+    cell.descriptionTxtView.text = [dict valueForKey:@"DESCRIPTION"];
     
     
     
+    
+    if ([dict valueForKey:@"IMAGE"] && ![[dict valueForKey:@"IMAGE"] isEqual:[NSNull null]]) {
+        __weak UIImageView* weakImageView = cell.contentImgView;
+        
+        NSString* imgStr = [[NSString stringWithFormat:@"http://beecheerup.in/Admin/Uploads/Upload_Blog/%@",[dict valueForKey:@"IMAGE"]] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        [cell.contentImgView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:imgStr]
+                                                                     cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                                                 timeoutInterval:60.0] placeholderImage:[UIImage imageNamed:@""] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+            
+            
+            weakImageView.alpha = 0.0;
+            weakImageView.image = image;
+            [UIView animateWithDuration:0.25
+                             animations:^{
+                                 weakImageView.alpha = 1.0;
+                             }];
+        } failure:NULL];
+    }
     
 }
+
+
+
+- (void) startGetBlogService {
+    
+    [SVProgressHUD showWithStatus:@"Please wait..."];
+    
+    DataSyncManager* manager = [[DataSyncManager alloc] init];
+    manager.serviceKey = kGetAllBlogsService;
+    manager.delegate = self;
+    [manager startGETWebServices];
+    
+}
+
+
+#pragma mark - DATASYNCMANAGER Delegates
+
+-(void) didFinishServiceWithSuccess:(id)responseData andServiceKey:(NSString *)requestServiceKey {
+    
+    [SVProgressHUD dismiss];
+    [SVProgressHUD showSuccessWithStatus:@"Success!"];
+    
+    if ([requestServiceKey isEqualToString:kGetAllBlogsService]) {
+        
+        contentArr = [[NSMutableArray alloc] initWithArray:[responseData valueForKey:@"blog"]];
+        [self.contentTableView reloadData];
+        
+    }
+    
+}
+
+
+- (void) didFinishServiceWithFailure:(NSString *)errorMsg {
+    
+    [SVProgressHUD dismiss];
+    
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:nil
+                                 message:@"An issue occured while processing your request. Please try again later."
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* noButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   //Handle no, thanks button
+                               }];
+    
+    [alert addAction:noButton];
+    
+    
+    if (![errorMsg isEqualToString:@""]) {
+        [alert setMessage:errorMsg];
+    }
+    
+    if ([errorMsg isEqualToString:NSLocalizedString(@"Verify your internet connection and try again", nil)]) {
+        [alert setTitle:NSLocalizedString(@"Connection unsuccessful", nil)];
+    }
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    return;
+    
+}
+
 @end

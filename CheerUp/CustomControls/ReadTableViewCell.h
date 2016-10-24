@@ -10,4 +10,14 @@
 
 @interface ReadTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *headingLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (weak, nonatomic) IBOutlet UILabel *profileNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *contentImgView;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTxtView;
+@property (weak, nonatomic) IBOutlet UIButton *heartButton;
+@property (weak, nonatomic) IBOutlet UIButton *bookmarkButton;
+@property (weak, nonatomic) IBOutlet UIButton *readMoreButton;
+
 @end

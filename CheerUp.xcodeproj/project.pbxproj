@@ -61,6 +61,9 @@
 		182991DF1DBE954B008A8C20 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182991DD1DBE954B008A8C20 /* ReadTableViewCell.xib */; };
 		182991E31DBE9C79008A8C20 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991E21DBE9C79008A8C20 /* camera.png */; };
 		182991E61DBE9E41008A8C20 /* ExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991E51DBE9E41008A8C20 /* ExpressViewController.m */; };
+		182991EF1DBEA1D8008A8C20 /* DataSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991EB1DBEA1D8008A8C20 /* DataSyncManager.m */; };
+		182991F01DBEA1D8008A8C20 /* SharedClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991EE1DBEA1D8008A8C20 /* SharedClass.m */; };
+		A5DF43C6C6D28B9FA4AEA926 /* libPods-CheerUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,16 @@
 		182991E21DBE9C79008A8C20 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		182991E41DBE9E41008A8C20 /* ExpressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressViewController.h; sourceTree = "<group>"; };
 		182991E51DBE9E41008A8C20 /* ExpressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressViewController.m; sourceTree = "<group>"; };
+		182991E71DBEA187008A8C20 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		182991E91DBEA1D8008A8C20 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		182991EA1DBEA1D8008A8C20 /* DataSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSyncManager.h; sourceTree = "<group>"; };
+		182991EB1DBEA1D8008A8C20 /* DataSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSyncManager.m; sourceTree = "<group>"; };
+		182991EC1DBEA1D8008A8C20 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		182991ED1DBEA1D8008A8C20 /* SharedClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedClass.h; sourceTree = "<group>"; };
+		182991EE1DBEA1D8008A8C20 /* SharedClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedClass.m; sourceTree = "<group>"; };
+		1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.debug.xcconfig"; sourceTree = "<group>"; };
+		71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.release.xcconfig"; sourceTree = "<group>"; };
+		D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DF43C6C6D28B9FA4AEA926 /* libPods-CheerUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +194,8 @@
 				182991251DBE8CBD008A8C20 /* CheerUpTests */,
 				182991301DBE8CBD008A8C20 /* CheerUpUITests */,
 				1829910A1DBE8CBD008A8C20 /* Products */,
+				A3D37A8C0E9D482B8C5DB109 /* Pods */,
+				EAC520A5484011B88E79E99C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +212,7 @@
 		1829910B1DBE8CBD008A8C20 /* CheerUp */ = {
 			isa = PBXGroup;
 			children = (
+				182991E81DBEA1D8008A8C20 /* Helpers */,
 				182991971DBE9520008A8C20 /* CustomControls */,
 				1829913F1DBE8D78008A8C20 /* Resources */,
 				1829910F1DBE8CBD008A8C20 /* AppDelegate.h */,
@@ -219,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				1829910D1DBE8CBD008A8C20 /* main.m */,
+				182991E71DBEA187008A8C20 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,6 +318,36 @@
 			path = CustomControls;
 			sourceTree = "<group>";
 		};
+		182991E81DBEA1D8008A8C20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				182991E91DBEA1D8008A8C20 /* Constants.h */,
+				182991EA1DBEA1D8008A8C20 /* DataSyncManager.h */,
+				182991EB1DBEA1D8008A8C20 /* DataSyncManager.m */,
+				182991EC1DBEA1D8008A8C20 /* Settings.h */,
+				182991ED1DBEA1D8008A8C20 /* SharedClass.h */,
+				182991EE1DBEA1D8008A8C20 /* SharedClass.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A3D37A8C0E9D482B8C5DB109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */,
+				71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAC520A5484011B88E79E99C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,9 +355,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182991361DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUp" */;
 			buildPhases = (
+				A1B37E10DAA7F490CF327D99 /* Check Pods Manifest.lock */,
 				182991051DBE8CBD008A8C20 /* Sources */,
 				182991061DBE8CBD008A8C20 /* Frameworks */,
 				182991071DBE8CBD008A8C20 /* Resources */,
+				550E9FC15E878F4FFCBA03F0 /* Embed Pods Frameworks */,
+				45FC30CF884D8EC4D307EA2C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,6 +418,7 @@
 				TargetAttributes = {
 					182991081DBE8CBD008A8C20 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CZA6DXR72T;
 					};
 					182991211DBE8CBD008A8C20 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -468,6 +520,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45FC30CF884D8EC4D307EA2C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		550E9FC15E878F4FFCBA03F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B37E10DAA7F490CF327D99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		182991051DBE8CBD008A8C20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -475,8 +575,10 @@
 			files = (
 				182991141DBE8CBD008A8C20 /* ViewController.m in Sources */,
 				182991111DBE8CBD008A8C20 /* AppDelegate.m in Sources */,
+				182991EF1DBEA1D8008A8C20 /* DataSyncManager.m in Sources */,
 				182991961DBE9479008A8C20 /* ReadViewController.m in Sources */,
 				182991DE1DBE954B008A8C20 /* ReadTableViewCell.m in Sources */,
+				182991F01DBEA1D8008A8C20 /* SharedClass.m in Sources */,
 				1829910E1DBE8CBD008A8C20 /* main.m in Sources */,
 				182991E61DBE9E41008A8C20 /* ExpressViewController.m in Sources */,
 			);
@@ -617,23 +719,35 @@
 		};
 		182991371DBE8CBD008A8C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
+				GCC_PREFIX_HEADER = CheerUp/PrefixHeader.pch;
 				INFOPLIST_FILE = CheerUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "087e2871-0719-42c3-8342-1fd46adab2cf";
 			};
 			name = Debug;
 		};
 		182991381DBE8CBD008A8C20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
+				GCC_PREFIX_HEADER = CheerUp/PrefixHeader.pch;
 				INFOPLIST_FILE = CheerUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "087e2871-0719-42c3-8342-1fd46adab2cf";
 			};
 			name = Release;
 		};
@@ -702,6 +816,7 @@
 				182991381DBE8CBD008A8C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		182991391DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUpTests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +825,7 @@
 				1829913B1DBE8CBD008A8C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1829913C1DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +834,7 @@
 				1829913E1DBE8CBD008A8C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
