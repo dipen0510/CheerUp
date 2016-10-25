@@ -16,6 +16,8 @@
 
 @implementation ReadViewController
 
+@synthesize isOpenedFromSideMenu;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -48,7 +50,16 @@
 */
 
 - (IBAction)backButtonTapped:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    
+    if (isOpenedFromSideMenu) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        ViewController* controller = (ViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+        [self.revealViewController setFrontViewController:controller animated:YES];
+    }
+    else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    
 }
 
 

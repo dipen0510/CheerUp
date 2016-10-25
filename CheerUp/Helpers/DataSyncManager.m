@@ -34,7 +34,7 @@
         
     } progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
-        //if ([responseObject isKindOfClass:[NSDictionary class]]) {
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
             
             if ([[responseObject valueForKey:@"status"] intValue] == 1 || [[responseObject valueForKey:@"result"] intValue] == 1) {
                 
@@ -48,6 +48,7 @@
             //}
             
             }
+        }
         
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {

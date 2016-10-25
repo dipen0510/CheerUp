@@ -13,6 +13,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *contentTableView;
+@property BOOL isOpenedFromSideMenu;
 
 - (IBAction)backButtonTapped:(id)sender;
 

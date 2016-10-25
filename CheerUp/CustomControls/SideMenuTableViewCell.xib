@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="SideMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="read_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eko-xC-gpt">
+                        <rect key="frame" x="8" y="8" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Eko-xC-gpt" secondAttribute="height" multiplier="1:1" id="n7C-Gy-jA8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezl-fv-GM5">
+                        <rect key="frame" x="77" y="24" width="235" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="UAH-fy-Gql"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Eko-xC-gpt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="B9M-Qa-4Op"/>
+                    <constraint firstAttribute="trailing" secondItem="ezl-fv-GM5" secondAttribute="trailing" constant="8" id="Dm6-nd-boJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Eko-xC-gpt" secondAttribute="bottom" constant="8" id="aIO-G5-uT1"/>
+                    <constraint firstItem="ezl-fv-GM5" firstAttribute="leading" secondItem="Eko-xC-gpt" secondAttribute="trailing" constant="16" id="f4M-gQ-YON"/>
+                    <constraint firstItem="ezl-fv-GM5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="sVz-P7-7K0"/>
+                    <constraint firstItem="Eko-xC-gpt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="vSI-vw-k4h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="menuImgView" destination="Eko-xC-gpt" id="xaf-vc-reS"/>
+                <outlet property="menuTitleLabel" destination="ezl-fv-GM5" id="xWI-43-TjH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="read_icon.png" width="129" height="132"/>
+    </resources>
+</document>

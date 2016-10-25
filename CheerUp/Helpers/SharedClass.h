@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SharedClass : NSObject {
+@interface SharedClass : NSObject <DataSyncManagerDelegate> {
 
 }
 
@@ -22,5 +22,7 @@
 - (NSString*)loadDataForService:(NSString *)service;
 - (void)removeServiceData:(NSString *)service;
 - (NSMutableDictionary *) getDictionaryFromJSONString:(NSString *)jsonString;
+
+- (void) startPostGCMService;
 
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181BD8E51DBFE81300631160 /* AdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD8E41DBFE81300631160 /* AdsViewController.m */; };
+		181BD8FE1DBFF6A000631160 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD8F71DBFF6A000631160 /* SWRevealViewController.m */; };
+		181BD9021DBFFA1200631160 /* SideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD9001DBFFA1200631160 /* SideMenuTableViewCell.m */; };
+		181BD9031DBFFA1200631160 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181BD9011DBFFA1200631160 /* SideMenuTableViewCell.xib */; };
+		181BD9061DBFFAF700631160 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD9051DBFFAF700631160 /* SideMenuViewController.m */; };
 		1829910E1DBE8CBD008A8C20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829910D1DBE8CBD008A8C20 /* main.m */; };
 		182991111DBE8CBD008A8C20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991101DBE8CBD008A8C20 /* AppDelegate.m */; };
 		182991141DBE8CBD008A8C20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991131DBE8CBD008A8C20 /* ViewController.m */; };
@@ -25,7 +30,6 @@
 		182991721DBE8ED6008A8C20 /* cheerup_img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991491DBE8ED6008A8C20 /* cheerup_img2.png */; };
 		182991731DBE8ED6008A8C20 /* dark_pink_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914A1DBE8ED6008A8C20 /* dark_pink_background.png */; };
 		182991741DBE8ED6008A8C20 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914B1DBE8ED6008A8C20 /* delete.png */; };
-		182991751DBE8ED6008A8C20 /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914C1DBE8ED6008A8C20 /* demo.png */; };
 		182991761DBE8ED6008A8C20 /* dot_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914D1DBE8ED6008A8C20 /* dot_background.png */; };
 		182991771DBE8ED6008A8C20 /* empty_hart_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914E1DBE8ED6008A8C20 /* empty_hart_icon.png */; };
 		182991781DBE8ED6008A8C20 /* exprees_camera_window.png in Resources */ = {isa = PBXBuildFile; fileRef = 1829914F1DBE8ED6008A8C20 /* exprees_camera_window.png */; };
@@ -50,7 +54,6 @@
 		1829918B1DBE8ED6008A8C20 /* read_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991621DBE8ED6008A8C20 /* read_icon.png */; };
 		1829918C1DBE8ED6008A8C20 /* read_it.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991631DBE8ED6008A8C20 /* read_it.png */; };
 		1829918D1DBE8ED6008A8C20 /* read.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991641DBE8ED6008A8C20 /* read.png */; };
-		1829918E1DBE8ED6008A8C20 /* right_indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991651DBE8ED6008A8C20 /* right_indicator.png */; };
 		1829918F1DBE8ED6008A8C20 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991661DBE8ED6008A8C20 /* right.png */; };
 		182991901DBE8ED6008A8C20 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991671DBE8ED6008A8C20 /* search.png */; };
 		182991911DBE8ED6008A8C20 /* user_icon_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 182991681DBE8ED6008A8C20 /* user_icon_white.png */; };
@@ -84,6 +87,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181BD8E31DBFE81300631160 /* AdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsViewController.h; sourceTree = "<group>"; };
+		181BD8E41DBFE81300631160 /* AdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsViewController.m; sourceTree = "<group>"; };
+		181BD8F61DBFF6A000631160 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		181BD8F71DBFF6A000631160 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		181BD8FF1DBFFA1200631160 /* SideMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuTableViewCell.h; sourceTree = "<group>"; };
+		181BD9001DBFFA1200631160 /* SideMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuTableViewCell.m; sourceTree = "<group>"; };
+		181BD9011DBFFA1200631160 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		181BD9041DBFFAF700631160 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		181BD9051DBFFAF700631160 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		182991091DBE8CBD008A8C20 /* CheerUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheerUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1829910D1DBE8CBD008A8C20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1829910F1DBE8CBD008A8C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,7 +122,6 @@
 		182991491DBE8ED6008A8C20 /* cheerup_img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheerup_img2.png; sourceTree = "<group>"; };
 		1829914A1DBE8ED6008A8C20 /* dark_pink_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_pink_background.png; sourceTree = "<group>"; };
 		1829914B1DBE8ED6008A8C20 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
-		1829914C1DBE8ED6008A8C20 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		1829914D1DBE8ED6008A8C20 /* dot_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot_background.png; sourceTree = "<group>"; };
 		1829914E1DBE8ED6008A8C20 /* empty_hart_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_hart_icon.png; sourceTree = "<group>"; };
 		1829914F1DBE8ED6008A8C20 /* exprees_camera_window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exprees_camera_window.png; sourceTree = "<group>"; };
@@ -135,7 +146,6 @@
 		182991621DBE8ED6008A8C20 /* read_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read_icon.png; sourceTree = "<group>"; };
 		182991631DBE8ED6008A8C20 /* read_it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read_it.png; sourceTree = "<group>"; };
 		182991641DBE8ED6008A8C20 /* read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = read.png; sourceTree = "<group>"; };
-		182991651DBE8ED6008A8C20 /* right_indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_indicator.png; sourceTree = "<group>"; };
 		182991661DBE8ED6008A8C20 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		182991671DBE8ED6008A8C20 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		182991681DBE8ED6008A8C20 /* user_icon_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon_white.png; sourceTree = "<group>"; };
@@ -187,6 +197,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181BD8E61DBFF6A000631160 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				181BD8F51DBFF6A000631160 /* SWRevealViewController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		181BD8F51DBFF6A000631160 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				181BD8F61DBFF6A000631160 /* SWRevealViewController.h */,
+				181BD8F71DBFF6A000631160 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		182991001DBE8CBD008A8C20 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +239,7 @@
 		1829910B1DBE8CBD008A8C20 /* CheerUp */ = {
 			isa = PBXGroup;
 			children = (
+				181BD8E61DBFF6A000631160 /* Library */,
 				182991E81DBEA1D8008A8C20 /* Helpers */,
 				182991971DBE9520008A8C20 /* CustomControls */,
 				1829913F1DBE8D78008A8C20 /* Resources */,
@@ -222,12 +250,15 @@
 				182991151DBE8CBD008A8C20 /* Main.storyboard */,
 				182991181DBE8CBD008A8C20 /* Assets.xcassets */,
 				1829911A1DBE8CBD008A8C20 /* LaunchScreen.storyboard */,
-				1829911D1DBE8CBD008A8C20 /* Info.plist */,
 				1829910C1DBE8CBD008A8C20 /* Supporting Files */,
 				182991941DBE9479008A8C20 /* ReadViewController.h */,
 				182991951DBE9479008A8C20 /* ReadViewController.m */,
 				182991E41DBE9E41008A8C20 /* ExpressViewController.h */,
 				182991E51DBE9E41008A8C20 /* ExpressViewController.m */,
+				181BD8E31DBFE81300631160 /* AdsViewController.h */,
+				181BD8E41DBFE81300631160 /* AdsViewController.m */,
+				181BD9041DBFFAF700631160 /* SideMenuViewController.h */,
+				181BD9051DBFFAF700631160 /* SideMenuViewController.m */,
 			);
 			path = CheerUp;
 			sourceTree = "<group>";
@@ -235,6 +266,7 @@
 		1829910C1DBE8CBD008A8C20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1829911D1DBE8CBD008A8C20 /* Info.plist */,
 				1829910D1DBE8CBD008A8C20 /* main.m */,
 				182991E71DBEA187008A8C20 /* PrefixHeader.pch */,
 			);
@@ -273,7 +305,6 @@
 				182991491DBE8ED6008A8C20 /* cheerup_img2.png */,
 				1829914A1DBE8ED6008A8C20 /* dark_pink_background.png */,
 				1829914B1DBE8ED6008A8C20 /* delete.png */,
-				1829914C1DBE8ED6008A8C20 /* demo.png */,
 				1829914D1DBE8ED6008A8C20 /* dot_background.png */,
 				1829914E1DBE8ED6008A8C20 /* empty_hart_icon.png */,
 				1829914F1DBE8ED6008A8C20 /* exprees_camera_window.png */,
@@ -298,7 +329,6 @@
 				182991621DBE8ED6008A8C20 /* read_icon.png */,
 				182991631DBE8ED6008A8C20 /* read_it.png */,
 				182991641DBE8ED6008A8C20 /* read.png */,
-				182991651DBE8ED6008A8C20 /* right_indicator.png */,
 				182991661DBE8ED6008A8C20 /* right.png */,
 				182991671DBE8ED6008A8C20 /* search.png */,
 				182991681DBE8ED6008A8C20 /* user_icon_white.png */,
@@ -314,6 +344,9 @@
 				182991DB1DBE954B008A8C20 /* ReadTableViewCell.h */,
 				182991DC1DBE954B008A8C20 /* ReadTableViewCell.m */,
 				182991DD1DBE954B008A8C20 /* ReadTableViewCell.xib */,
+				181BD8FF1DBFFA1200631160 /* SideMenuTableViewCell.h */,
+				181BD9001DBFFA1200631160 /* SideMenuTableViewCell.m */,
+				181BD9011DBFFA1200631160 /* SideMenuTableViewCell.xib */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -461,6 +494,7 @@
 				182991761DBE8ED6008A8C20 /* dot_background.png in Resources */,
 				182991E31DBE9C79008A8C20 /* camera.png in Resources */,
 				182991701DBE8ED6008A8C20 /* cheerup_img.png in Resources */,
+				181BD9031DBFFA1200631160 /* SideMenuTableViewCell.xib in Resources */,
 				182991831DBE8ED6008A8C20 /* navigation_bar.png in Resources */,
 				1829911C1DBE8CBD008A8C20 /* LaunchScreen.storyboard in Resources */,
 				182991721DBE8ED6008A8C20 /* cheerup_img2.png in Resources */,
@@ -481,7 +515,6 @@
 				182991851DBE8ED6008A8C20 /* nearby_icon.png in Resources */,
 				182991791DBE8ED6008A8C20 /* express_icon.png in Resources */,
 				182991891DBE8ED6008A8C20 /* orange_under_line.png in Resources */,
-				1829918E1DBE8ED6008A8C20 /* right_indicator.png in Resources */,
 				182991191DBE8CBD008A8C20 /* Assets.xcassets in Resources */,
 				182991741DBE8ED6008A8C20 /* delete.png in Resources */,
 				1829917A1DBE8ED6008A8C20 /* express_img.png in Resources */,
@@ -496,7 +529,6 @@
 				1829918D1DBE8ED6008A8C20 /* read.png in Resources */,
 				182991921DBE8ED6008A8C20 /* user_icon.png in Resources */,
 				182991771DBE8ED6008A8C20 /* empty_hart_icon.png in Resources */,
-				182991751DBE8ED6008A8C20 /* demo.png in Resources */,
 				182991861DBE8ED6008A8C20 /* nearby.png in Resources */,
 				182991731DBE8ED6008A8C20 /* dark_pink_background.png in Resources */,
 				1829916E1DBE8ED6008A8C20 /* bookmark_fill.png in Resources */,
@@ -573,11 +605,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181BD9061DBFFAF700631160 /* SideMenuViewController.m in Sources */,
 				182991141DBE8CBD008A8C20 /* ViewController.m in Sources */,
+				181BD8E51DBFE81300631160 /* AdsViewController.m in Sources */,
 				182991111DBE8CBD008A8C20 /* AppDelegate.m in Sources */,
 				182991EF1DBEA1D8008A8C20 /* DataSyncManager.m in Sources */,
 				182991961DBE9479008A8C20 /* ReadViewController.m in Sources */,
+				181BD8FE1DBFF6A000631160 /* SWRevealViewController.m in Sources */,
 				182991DE1DBE954B008A8C20 /* ReadTableViewCell.m in Sources */,
+				181BD9021DBFFA1200631160 /* SideMenuTableViewCell.m in Sources */,
 				182991F01DBEA1D8008A8C20 /* SharedClass.m in Sources */,
 				1829910E1DBE8CBD008A8C20 /* main.m in Sources */,
 				182991E61DBE9E41008A8C20 /* ExpressViewController.m in Sources */,

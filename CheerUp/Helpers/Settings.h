@@ -12,6 +12,8 @@
 #define DomainBaseURL @"http://beecheerup.in"
 
 #define kGetAllBlogsService @"Cheerup_App/getAllBlog.php"
-#define kViewAdService @"Cheerup_App/getAllAddvertise.php?CITY="
+#define kGetAdService @"Cheerup_App/getAllAddvertise.php?CITY="
+#define kPostGCM @"Cheerup_App/PostGCM.php"
+#define kPostBlog @"Admin/Uploads/PostBlog.php"
 
 #endif /* Settings_h */

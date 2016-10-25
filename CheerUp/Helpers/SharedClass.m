@@ -133,4 +133,83 @@ static SharedClass *singletonObject = nil;
     
 }
 
+
+- (void) startPostGCMService {
+    
+    NSMutableDictionary* reqDict = [self prepareDictForPostGCMService];
+    
+    if (reqDict) {
+        DataSyncManager* manager = [[DataSyncManager alloc] init];
+        manager.serviceKey = kPostGCM;
+        manager.delegate = self;
+        [manager startPOSTWebServicesWithParams:reqDict];
+    }
+    
+    
+}
+
+
+#pragma mark - DATASYNCMANAGER Delegates
+
+-(void) didFinishServiceWithSuccess:(id)responseData andServiceKey:(NSString *)requestServiceKey {
+    
+    if ([requestServiceKey isEqualToString:kPostGCM]) {
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kIsGCMPosted];
+        
+    }
+    
+}
+
+
+- (void) didFinishServiceWithFailure:(NSString *)errorMsg {
+    
+    [SVProgressHUD dismiss];
+    
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:nil
+                                 message:@"An issue occured while processing your request. Please try again later."
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* noButton = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction * action) {
+                                   //Handle no, thanks button
+                               }];
+    
+    [alert addAction:noButton];
+    
+    
+    if (![errorMsg isEqualToString:@""]) {
+        [alert setMessage:errorMsg];
+    }
+    
+    if ([errorMsg isEqualToString:NSLocalizedString(@"Verify your internet connection and try again", nil)]) {
+        [alert setTitle:NSLocalizedString(@"Connection unsuccessful", nil)];
+    }
+    
+    return;
+    
+}
+
+- (NSMutableDictionary *) prepareDictForPostGCMService {
+    
+    NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
+    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:kDeviceToken]) {
+        [dict setObject:[[NSUserDefaults standardUserDefaults] valueForKey:kDeviceToken] forKey:@"GCM_ID"];
+    }
+    else {
+//        [dict setObject:@"1234" forKey:@"GCM_ID"];
+        return nil;
+    }
+    
+    [dict setObject:[[NSUserDefaults standardUserDefaults] valueForKey:kCurrentCity] forKey:@"CITY"];
+    [dict setObject:@"2" forKey:@"DEVICE_TYPE"];
+    
+    return dict;
+    
+}
+
 @end
