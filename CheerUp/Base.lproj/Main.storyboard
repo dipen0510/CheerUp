@@ -72,6 +72,7 @@
                         <segue destination="vCw-hG-0kO" kind="custom" identifier="showReadSegue" customClass="SWRevealViewControllerSeguePushController" id="Xb8-Gy-eH4"/>
                         <segue destination="v9n-qX-rb0" kind="custom" identifier="showExpressSegue" customClass="SWRevealViewControllerSeguePushController" id="5rE-Vx-X2r"/>
                         <segue destination="4kD-FK-zp3" kind="custom" identifier="showAdsSegue" customClass="SWRevealViewControllerSeguePushController" id="myK-fg-EHA"/>
+                        <segue destination="vCw-hG-0kO" kind="custom" identifier="showBookmarkSegue" customClass="SWRevealViewControllerSeguePushController" id="C1S-CW-7aY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPd-rc-JQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,11 +285,83 @@
                     </view>
                     <connections>
                         <outlet property="contentTableView" destination="cG8-1r-bQY" id="iDZ-9B-mL1"/>
+                        <segue destination="RCb-PV-YZg" kind="show" identifier="showBlogDetailSegue" id="yq7-C8-PHB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8H5-KW-Ylp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2587" y="-448"/>
+        </scene>
+        <!--Blog Detail View Controller-->
+        <scene sceneID="Dd5-9p-ovW">
+            <objects>
+                <viewController id="RCb-PV-YZg" customClass="BlogDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qRN-I8-QuX"/>
+                        <viewControllerLayoutGuide type="bottom" id="OOR-5e-8zA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T6B-aj-u8E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_under_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-rY-zXQ">
+                                <rect key="frame" x="0.0" y="63" width="600" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="tvS-KT-3GP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheerup_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Ob-oB-vJC">
+                                <rect key="frame" x="490" y="20" width="90" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fSm-Es-05h"/>
+                                    <constraint firstAttribute="width" constant="90" id="wUy-WC-cTu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7e-BB-9Fr">
+                                <rect key="frame" x="20" y="23" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ay5-du-YEZ"/>
+                                    <constraint firstAttribute="width" constant="46" id="vrU-go-QWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="RCb-PV-YZg" eventType="touchUpInside" id="C5p-f3-FZN"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4RW-u3-OIQ">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RCb-PV-YZg" id="UsO-cQ-CnL"/>
+                                    <outlet property="delegate" destination="RCb-PV-YZg" id="q0z-uz-HHs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3rN-rY-zXQ" secondAttribute="trailing" id="73R-rh-i1H"/>
+                            <constraint firstItem="OOR-5e-8zA" firstAttribute="top" secondItem="4RW-u3-OIQ" secondAttribute="bottom" id="DJy-rj-bHQ"/>
+                            <constraint firstItem="6Ob-oB-vJC" firstAttribute="top" secondItem="qRN-I8-QuX" secondAttribute="bottom" id="FlV-Xj-76R"/>
+                            <constraint firstItem="4RW-u3-OIQ" firstAttribute="top" secondItem="3rN-rY-zXQ" secondAttribute="bottom" id="Me3-Yd-NlI"/>
+                            <constraint firstItem="n7e-BB-9Fr" firstAttribute="leading" secondItem="T6B-aj-u8E" secondAttribute="leading" constant="20" id="Q97-nI-giz"/>
+                            <constraint firstItem="3rN-rY-zXQ" firstAttribute="top" secondItem="6Ob-oB-vJC" secondAttribute="bottom" constant="8" id="W59-kK-oLm"/>
+                            <constraint firstItem="n7e-BB-9Fr" firstAttribute="top" secondItem="qRN-I8-QuX" secondAttribute="bottom" constant="3" id="eTc-Lg-8U4"/>
+                            <constraint firstAttribute="trailing" secondItem="4RW-u3-OIQ" secondAttribute="trailing" id="fTq-9b-lQA"/>
+                            <constraint firstItem="4RW-u3-OIQ" firstAttribute="leading" secondItem="T6B-aj-u8E" secondAttribute="leading" id="g3r-42-lkg"/>
+                            <constraint firstItem="3rN-rY-zXQ" firstAttribute="leading" secondItem="T6B-aj-u8E" secondAttribute="leading" id="juZ-Ca-XyD"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ob-oB-vJC" secondAttribute="trailing" constant="20" id="zO8-Fh-iwv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTblView" destination="4RW-u3-OIQ" id="G5o-Nj-dbT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="su7-Nh-Riz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3371" y="-448"/>
         </scene>
         <!--Express View Controller-->
         <scene sceneID="16X-oc-bRN">
@@ -705,7 +778,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="5rE-Vx-X2r"/>
-        <segue reference="Xb8-Gy-eH4"/>
         <segue reference="myK-fg-EHA"/>
+        <segue reference="C1S-CW-7aY"/>
     </inferredMetricsTieBreakers>
 </document>

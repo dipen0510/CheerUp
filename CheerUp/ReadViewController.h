@@ -10,10 +10,13 @@
 
 @interface ReadViewController : UIViewController <DataSyncManagerDelegate> {
     NSMutableArray* contentArr;
+    NSMutableArray* bookmarkedBlogArr;
+    NSMutableDictionary* selectedDict;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *contentTableView;
 @property BOOL isOpenedFromSideMenu;
+@property BOOL isBookmarkedView;
 
 - (IBAction)backButtonTapped:(id)sender;
 

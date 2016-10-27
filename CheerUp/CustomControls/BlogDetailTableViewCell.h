@@ -1,14 +1,14 @@
 //
-//  ReadTableViewCell.h
+//  BlogDetailTableViewCell.h
 //  CheerUp
 //
-//  Created by Dipen Sekhsaria on 25/10/16.
+//  Created by Dipen Sekhsaria on 28/10/16.
 //  Copyright © 2016 stardeep. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ReadTableViewCell : UITableViewCell
+@interface BlogDetailTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *headingLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;

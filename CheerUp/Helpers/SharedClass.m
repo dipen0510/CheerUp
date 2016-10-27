@@ -69,37 +69,37 @@ static SharedClass *singletonObject = nil;
 
 #pragma mark - Local Storage Handling
 
-- (void)saveData: (NSString*)data ForService:(NSString *)service
+- (void)saveBookmarkData: (NSString*)data
 {
     if (data != nil)
     {
         
-        [self removeServiceData:service];
+        [self removeBookmarkServiceData];
         
         NSString *documentsDirectory = [self getDocumentDirectoryPath];
         NSString* path = [documentsDirectory stringByAppendingPathComponent:
-                          [NSString stringWithFormat:@"%@.txt",service] ];
+                          [NSString stringWithFormat:@"bookmark.txt"] ];
         
         [data writeToFile:path atomically:YES
                  encoding:NSUTF8StringEncoding error:nil];
     }
 }
 
-- (NSString*)loadDataForService:(NSString *)service
+- (NSString*)loadBookmarkDataForService
 {
     NSString *documentsDirectory = [self getDocumentDirectoryPath];
     NSString* path = [documentsDirectory stringByAppendingPathComponent:
-                      [NSString stringWithFormat:@"%@.txt",service] ];
+                      [NSString stringWithFormat:@"bookmark.txt"] ];
     NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
     return content;
 }
 
-- (void)removeServiceData:(NSString *)service
+- (void)removeBookmarkServiceData
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *documentsDirectory = [self getDocumentDirectoryPath];
     NSString* path = [documentsDirectory stringByAppendingPathComponent:
-                      [NSString stringWithFormat:@"%@.txt",service] ];
+                      [NSString stringWithFormat:@"bookmark.txt"] ];
     
     NSError *error;
     BOOL success = [fileManager removeItemAtPath:path error:&error];

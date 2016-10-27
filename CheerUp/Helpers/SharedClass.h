@@ -18,9 +18,9 @@
 -(NSDate *)getCurrentUTCFormatDate;
 -(NSString* )getCurrentUTCFormatDateString;
 
-- (void)saveData: (NSString*)data ForService:(NSString *)service;
-- (NSString*)loadDataForService:(NSString *)service;
-- (void)removeServiceData:(NSString *)service;
+- (void)saveBookmarkData: (NSString*)data;
+- (NSString*)loadBookmarkDataForService;
+- (void)removeBookmarkServiceData;
 - (NSMutableDictionary *) getDictionaryFromJSONString:(NSString *)jsonString;
 
 - (void) startPostGCMService;

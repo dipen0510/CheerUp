@@ -66,6 +66,9 @@
 		182991E61DBE9E41008A8C20 /* ExpressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991E51DBE9E41008A8C20 /* ExpressViewController.m */; };
 		182991EF1DBEA1D8008A8C20 /* DataSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991EB1DBEA1D8008A8C20 /* DataSyncManager.m */; };
 		182991F01DBEA1D8008A8C20 /* SharedClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 182991EE1DBEA1D8008A8C20 /* SharedClass.m */; };
+		182D79291DC2A68F00C5230C /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D79281DC2A68F00C5230C /* BlogDetailViewController.m */; };
+		182D792D1DC2AB1600C5230C /* BlogDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D792B1DC2AB1600C5230C /* BlogDetailTableViewCell.m */; };
+		182D792E1DC2AB1600C5230C /* BlogDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D792C1DC2AB1600C5230C /* BlogDetailTableViewCell.xib */; };
 		A5DF43C6C6D28B9FA4AEA926 /* libPods-CheerUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +169,11 @@
 		182991EC1DBEA1D8008A8C20 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		182991ED1DBEA1D8008A8C20 /* SharedClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedClass.h; sourceTree = "<group>"; };
 		182991EE1DBEA1D8008A8C20 /* SharedClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedClass.m; sourceTree = "<group>"; };
+		182D79271DC2A68F00C5230C /* BlogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
+		182D79281DC2A68F00C5230C /* BlogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
+		182D792A1DC2AB1600C5230C /* BlogDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailTableViewCell.h; sourceTree = "<group>"; };
+		182D792B1DC2AB1600C5230C /* BlogDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailTableViewCell.m; sourceTree = "<group>"; };
+		182D792C1DC2AB1600C5230C /* BlogDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogDetailTableViewCell.xib; sourceTree = "<group>"; };
 		1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.debug.xcconfig"; sourceTree = "<group>"; };
 		71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.release.xcconfig"; sourceTree = "<group>"; };
 		D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,6 +267,8 @@
 				181BD8E41DBFE81300631160 /* AdsViewController.m */,
 				181BD9041DBFFAF700631160 /* SideMenuViewController.h */,
 				181BD9051DBFFAF700631160 /* SideMenuViewController.m */,
+				182D79271DC2A68F00C5230C /* BlogDetailViewController.h */,
+				182D79281DC2A68F00C5230C /* BlogDetailViewController.m */,
 			);
 			path = CheerUp;
 			sourceTree = "<group>";
@@ -347,6 +357,9 @@
 				181BD8FF1DBFFA1200631160 /* SideMenuTableViewCell.h */,
 				181BD9001DBFFA1200631160 /* SideMenuTableViewCell.m */,
 				181BD9011DBFFA1200631160 /* SideMenuTableViewCell.xib */,
+				182D792A1DC2AB1600C5230C /* BlogDetailTableViewCell.h */,
+				182D792B1DC2AB1600C5230C /* BlogDetailTableViewCell.m */,
+				182D792C1DC2AB1600C5230C /* BlogDetailTableViewCell.xib */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -488,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182D792E1DC2AB1600C5230C /* BlogDetailTableViewCell.xib in Resources */,
 				1829916D1DBE8ED6008A8C20 /* blank_pink_circle.png in Resources */,
 				1829917B1DBE8ED6008A8C20 /* express_inputtex.png in Resources */,
 				182991821DBE8ED6008A8C20 /* massage_icon.png in Resources */,
@@ -609,6 +623,7 @@
 				182991141DBE8CBD008A8C20 /* ViewController.m in Sources */,
 				181BD8E51DBFE81300631160 /* AdsViewController.m in Sources */,
 				182991111DBE8CBD008A8C20 /* AppDelegate.m in Sources */,
+				182D79291DC2A68F00C5230C /* BlogDetailViewController.m in Sources */,
 				182991EF1DBEA1D8008A8C20 /* DataSyncManager.m in Sources */,
 				182991961DBE9479008A8C20 /* ReadViewController.m in Sources */,
 				181BD8FE1DBFF6A000631160 /* SWRevealViewController.m in Sources */,
@@ -616,6 +631,7 @@
 				181BD9021DBFFA1200631160 /* SideMenuTableViewCell.m in Sources */,
 				182991F01DBEA1D8008A8C20 /* SharedClass.m in Sources */,
 				1829910E1DBE8CBD008A8C20 /* main.m in Sources */,
+				182D792D1DC2AB1600C5230C /* BlogDetailTableViewCell.m in Sources */,
 				182991E61DBE9E41008A8C20 /* ExpressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,7 +782,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "087e2871-0719-42c3-8342-1fd46adab2cf";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -783,7 +799,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "087e2871-0719-42c3-8342-1fd46adab2cf";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

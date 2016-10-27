@@ -9,6 +9,7 @@
 #import "ReadViewController.h"
 #import "ReadTableViewCell.h"
 #import <UIImageView+AFNetworking.h>
+#import "BlogDetailViewController.h"
 
 @interface ReadViewController ()
 
@@ -16,14 +17,13 @@
 
 @implementation ReadViewController
 
-@synthesize isOpenedFromSideMenu;
+@synthesize isOpenedFromSideMenu,isBookmarkedView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self setupInitalView];
-    [self startGetBlogService];
     
 }
 
@@ -36,18 +36,41 @@
     
     self.contentTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     contentArr = [[NSMutableArray alloc] init];
+    selectedDict = [[NSMutableDictionary alloc] init];
     
+    NSString* attendStr = [[SharedClass sharedInstance] loadBookmarkDataForService];
+    if (attendStr) {
+        bookmarkedBlogArr = (NSMutableArray *)[[SharedClass sharedInstance] getDictionaryFromJSONString:attendStr];
+    }
+    else {
+        bookmarkedBlogArr = [[NSMutableArray alloc] init];
+    }
+    
+    if (isBookmarkedView) {
+        contentArr = bookmarkedBlogArr;
+    }
+    else {
+        
+        [self startGetBlogService];
+        
+    }
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"showBlogDetailSegue"]) {
+        BlogDetailViewController* controller = [segue destinationViewController];
+        controller.contentDetailDict = selectedDict;
+    }
+    
 }
-*/
+
 
 - (IBAction)backButtonTapped:(id)sender {
     
@@ -114,8 +137,24 @@
     cell.dateLabel.text = [dict valueForKey:@"DATE_CREATED"];
     cell.descriptionTxtView.text = [dict valueForKey:@"DESCRIPTION"];
     
+    cell.readMoreButton.tag = indexPath.row;
+    [cell.readMoreButton addTarget:self action:@selector(readMoreButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    if (isBookmarkedView) {
+        cell.bookmarkButton.hidden = YES;
+    }
+    else {
+        cell.bookmarkButton.hidden = NO;
+        cell.bookmarkButton.tag = indexPath.row;
+        [cell.bookmarkButton addTarget:self action:@selector(bookmarkButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        
+        if ([bookmarkedBlogArr containsObject:dict]) {
+            [cell.bookmarkButton setSelected:YES];
+        }
+        else {
+            [cell.bookmarkButton setSelected:NO];
+        }
+    }
     
     if ([dict valueForKey:@"IMAGE"] && ![[dict valueForKey:@"IMAGE"] isEqual:[NSNull null]]) {
         __weak UIImageView* weakImageView = cell.contentImgView;
@@ -199,6 +238,35 @@
     [self presentViewController:alert animated:YES completion:nil];
     
     return;
+    
+}
+
+
+- (void) bookmarkButtonTapped:(UIButton *)button {
+    
+    if ([bookmarkedBlogArr containsObject:[contentArr objectAtIndex:button.tag]]) {
+        [bookmarkedBlogArr removeObject:[contentArr objectAtIndex:button.tag]];
+        [button setSelected:NO];
+    }
+    else {
+        [bookmarkedBlogArr addObject:[contentArr objectAtIndex:button.tag]];
+        [button setSelected:YES];
+    }
+    
+    if (bookmarkedBlogArr.count>0) {
+        NSError* error = nil;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:bookmarkedBlogArr options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+        [[SharedClass sharedInstance] saveBookmarkData:jsonString];
+    }
+    
+}
+
+- (void) readMoreButtonTapped:(UIButton *) button {
+    
+    selectedDict = [contentArr objectAtIndex:button.tag];
+    [self performSegueWithIdentifier:@"showBlogDetailSegue" sender:nil];
     
 }
 

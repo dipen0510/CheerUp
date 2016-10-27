@@ -62,21 +62,13 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-yv-qaJ">
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-yv-qaJ">
                         <rect key="frame" x="8" y="364" width="30" height="27"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="Qma-rg-8d5"/>
                             <constraint firstAttribute="height" constant="27" id="lh3-ng-Taz"/>
                         </constraints>
                         <state key="normal" image="empty_hart_icon.png"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPB-oq-dkS">
-                        <rect key="frame" x="46" y="364" width="26" height="27"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="27" id="DiO-hW-bvP"/>
-                            <constraint firstAttribute="width" constant="26" id="KK3-fL-VQq"/>
-                        </constraints>
-                        <state key="normal" image="massage_icon.png"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-2C-jeB">
                         <rect key="frame" x="220" y="361" width="92" height="30"/>
@@ -95,6 +87,15 @@
                             <constraint firstAttribute="height" constant="5" id="XbN-e7-f4d"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPB-oq-dkS">
+                        <rect key="frame" x="15" y="359" width="26" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="DiO-hW-bvP"/>
+                            <constraint firstAttribute="width" constant="26" id="KK3-fL-VQq"/>
+                        </constraints>
+                        <state key="normal" image="massage_icon.png"/>
+                        <state key="selected" image="bookmark_fill.png"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="qld-rU-19g" secondAttribute="trailing" constant="8" id="1oL-mM-ql9"/>
@@ -104,7 +105,7 @@
                     <constraint firstAttribute="trailing" secondItem="gkI-Na-luf" secondAttribute="trailing" constant="8" id="Bsv-iq-k1q"/>
                     <constraint firstAttribute="trailing" secondItem="URO-3g-hjw" secondAttribute="trailing" constant="8" id="DkI-hw-qVp"/>
                     <constraint firstItem="URO-3g-hjw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="IHg-7Y-7VO"/>
-                    <constraint firstItem="wPB-oq-dkS" firstAttribute="top" secondItem="Kbe-Hi-lVY" secondAttribute="bottom" constant="23" id="NKG-0c-WSK"/>
+                    <constraint firstItem="wPB-oq-dkS" firstAttribute="top" secondItem="Kbe-Hi-lVY" secondAttribute="bottom" constant="18" id="NKG-0c-WSK"/>
                     <constraint firstAttribute="trailing" secondItem="zQD-2C-jeB" secondAttribute="trailing" constant="8" id="Tfg-B5-dnA"/>
                     <constraint firstAttribute="trailing" secondItem="Kbe-Hi-lVY" secondAttribute="trailing" constant="8" id="TgN-9e-PYI"/>
                     <constraint firstItem="GbD-yv-qaJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UGQ-EO-NXP"/>
@@ -119,7 +120,7 @@
                     <constraint firstItem="qld-rU-19g" firstAttribute="top" secondItem="oLp-Lq-byY" secondAttribute="bottom" constant="8" id="jCx-U0-kaP"/>
                     <constraint firstItem="zQD-2C-jeB" firstAttribute="top" secondItem="Kbe-Hi-lVY" secondAttribute="bottom" constant="20" id="kX9-0G-Zz1"/>
                     <constraint firstItem="oLp-Lq-byY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="krU-Cg-nLQ"/>
-                    <constraint firstItem="wPB-oq-dkS" firstAttribute="leading" secondItem="GbD-yv-qaJ" secondAttribute="trailing" constant="8" id="npn-Ks-48e"/>
+                    <constraint firstItem="wPB-oq-dkS" firstAttribute="leading" secondItem="GbD-yv-qaJ" secondAttribute="trailing" constant="-23" id="npn-Ks-48e"/>
                     <constraint firstItem="Kbe-Hi-lVY" firstAttribute="top" secondItem="qld-rU-19g" secondAttribute="bottom" constant="8" id="rh3-Vs-1ml"/>
                     <constraint firstItem="qld-rU-19g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tuD-1q-9EC"/>
                     <constraint firstAttribute="trailing" secondItem="FwL-Y2-aAD" secondAttribute="trailing" id="uSA-rs-aA0"/>
@@ -140,6 +141,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="bookmark_fill.png" width="48" height="68"/>
         <image name="empty_hart_icon.png" width="76" height="69"/>
         <image name="massage_icon.png" width="48" height="68"/>
         <image name="orange_footer_bar.png" width="900" height="118"/>

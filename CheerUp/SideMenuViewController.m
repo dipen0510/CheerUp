@@ -46,7 +46,7 @@
     [tableArr addObject:dict3];
     
     NSMutableDictionary* dict4 = [[NSMutableDictionary alloc] init];
-    [dict4 setObject:@"Notification" forKey:@"title"];
+    [dict4 setObject:@"Bookmarks" forKey:@"title"];
     [dict4 setObject:@"notification_icon.png" forKey:@"image"];
     [tableArr addObject:dict4];
     
@@ -121,6 +121,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             break;
             
         case 3:
+            [self performSegueWithIdentifier:@"showBookmarkSegue" sender:nil];
             break;
             
         default:
@@ -155,6 +156,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         AdsViewController* controller = (AdsViewController *)[segue destinationViewController];
         controller.isOpenedFromSideMenu = YES;
         
+    }
+    if ([[segue identifier] isEqualToString:@"showBookmarkSegue"]) {
+        
+        ReadViewController* controller = (ReadViewController *)[segue destinationViewController];
+        controller.isOpenedFromSideMenu = YES;
+        controller.isBookmarkedView = YES;
     }
     
 }
