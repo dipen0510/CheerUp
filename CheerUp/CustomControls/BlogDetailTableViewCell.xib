@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -21,7 +22,7 @@
                             <constraint firstAttribute="height" constant="21" id="bFT-rd-H2f"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vidur Sharma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-qS-UXb">
@@ -30,7 +31,7 @@
                             <constraint firstAttribute="height" constant="21" id="9Ud-6k-3wu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Spet 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwr-7I-QHt">
@@ -56,7 +57,7 @@
                         </constraints>
                     </imageView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W2D-me-JSn">
-                        <rect key="frame" x="8" y="245" width="304" height="96"/>
+                        <rect key="frame" x="8" y="245" width="304" height="114"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -98,6 +99,7 @@
                     <constraint firstItem="W2D-me-JSn" firstAttribute="leading" secondItem="r0H-kf-P2e" secondAttribute="leading" constant="8" id="AIm-Pv-LkR"/>
                     <constraint firstItem="SGT-lb-fVI" firstAttribute="top" secondItem="evq-30-bkI" secondAttribute="bottom" constant="8" id="ELd-Sv-kni"/>
                     <constraint firstAttribute="trailing" secondItem="181-GE-hnH" secondAttribute="trailing" constant="8" id="EhW-bD-aGL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W2D-me-JSn" secondAttribute="bottom" constant="32" id="Eoz-rk-Jdv"/>
                     <constraint firstAttribute="trailing" secondItem="W2D-me-JSn" secondAttribute="trailing" constant="8" id="KJg-qm-Dh9"/>
                     <constraint firstAttribute="trailing" secondItem="u0U-qS-UXb" secondAttribute="trailing" constant="8" id="KW4-3h-GXq"/>
                     <constraint firstItem="evq-30-bkI" firstAttribute="top" secondItem="r0H-kf-P2e" secondAttribute="top" constant="8" id="PA7-ax-4FL"/>
@@ -105,7 +107,6 @@
                     <constraint firstAttribute="bottom" secondItem="M4Q-rv-c2W" secondAttribute="bottom" constant="13" id="R4o-i0-LOl"/>
                     <constraint firstItem="evq-30-bkI" firstAttribute="leading" secondItem="r0H-kf-P2e" secondAttribute="leading" constant="8" id="WPG-1K-3mw"/>
                     <constraint firstItem="u0U-qS-UXb" firstAttribute="leading" secondItem="SGT-lb-fVI" secondAttribute="trailing" constant="8" id="Y0n-Sg-MNb"/>
-                    <constraint firstItem="M4Q-rv-c2W" firstAttribute="top" secondItem="W2D-me-JSn" secondAttribute="bottom" constant="18" id="aaq-2A-sXy"/>
                     <constraint firstItem="W2D-me-JSn" firstAttribute="top" secondItem="hLZ-s5-FLS" secondAttribute="bottom" constant="8" id="dWR-vj-Fse"/>
                     <constraint firstItem="hLZ-s5-FLS" firstAttribute="top" secondItem="SGT-lb-fVI" secondAttribute="bottom" constant="8" id="dkT-ti-sEs"/>
                     <constraint firstItem="hLZ-s5-FLS" firstAttribute="leading" secondItem="r0H-kf-P2e" secondAttribute="leading" constant="8" id="dq2-IN-7SZ"/>

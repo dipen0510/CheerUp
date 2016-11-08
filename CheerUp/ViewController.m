@@ -41,7 +41,7 @@
         [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
         [self.view addGestureRecognizer:revealViewController.panGestureRecognizer];
         [self.view addGestureRecognizer:revealViewController.tapGestureRecognizer];
-        [revealViewController setFrontViewShadowRadius:10.0];
+        //[revealViewController setFrontViewShadowRadius:10.0];
     }
 }
 

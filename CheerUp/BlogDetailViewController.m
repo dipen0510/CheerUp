@@ -97,6 +97,8 @@
 
 - (void) displayContentForCell:(BlogDetailTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
+    
+    [cell.descriptionTxtView scrollRangeToVisible:NSMakeRange(0, 1)];
     cell.descriptionTxtView.editable = NO;
     cell.descriptionTxtView.userInteractionEnabled = NO;
     
