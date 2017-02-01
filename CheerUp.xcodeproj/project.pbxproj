@@ -782,7 +782,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d17917d2-87a1-4308-962b-5511c074cda2";
+				PROVISIONING_PROFILE = "eb9abf75-ff4e-4901-afe1-c18f0a1b337b";
 			};
 			name = Debug;
 		};
@@ -799,7 +799,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d17917d2-87a1-4308-962b-5511c074cda2";
+				PROVISIONING_PROFILE = "eb9abf75-ff4e-4901-afe1-c18f0a1b337b";
 			};
 			name = Release;
 		};
