@@ -341,8 +341,8 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         self.activityCount = 0;
         
         // Set default values
-        _defaultMaskType = SVProgressHUDMaskTypeGradient;
-        _defaultStyle = SVProgressHUDStyleDark;
+        _defaultMaskType = SVProgressHUDMaskTypeNone;
+        _defaultStyle = SVProgressHUDStyleLight;
         _defaultAnimationType = SVProgressHUDAnimationTypeFlat;
         _minimumSize = CGSizeMake(100.0f, 100.0f);
         
@@ -376,7 +376,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         
         _cornerRadius = 14.0f;
         
-        _minimumDismissTimeInterval = 1.0;
+        _minimumDismissTimeInterval = 5.0;
 
         _fadeInAnimationDuration = SVProgressHUDDefaultAnimationDuration;
         _fadeOutAnimationDuration = SVProgressHUDDefaultAnimationDuration;

@@ -21,8 +21,8 @@
     // Do any additional setup after loading the view.
     
     adsArr = [[NSMutableArray alloc] init];
-    [self setupUIForIndex:0];
-    [self startGetAdService];
+//    [self setupUIForIndex:0];
+//    [self startGetAdService];
     
     UISwipeGestureRecognizer* swipeRightGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftButtonTapped:)];
     swipeRightGesture.direction = UISwipeGestureRecognizerDirectionRight;

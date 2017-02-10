@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F778FA440F2985EF5007B54 /* libPods-CheerUpUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEABE36D3E112AB9B143631 /* libPods-CheerUpUITests.a */; };
 		181BD8E51DBFE81300631160 /* AdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD8E41DBFE81300631160 /* AdsViewController.m */; };
 		181BD8FE1DBFF6A000631160 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD8F71DBFF6A000631160 /* SWRevealViewController.m */; };
 		181BD9021DBFFA1200631160 /* SideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181BD9001DBFFA1200631160 /* SideMenuTableViewCell.m */; };
@@ -68,8 +69,9 @@
 		182D79291DC2A68F00C5230C /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D79281DC2A68F00C5230C /* BlogDetailViewController.m */; };
 		182D792D1DC2AB1600C5230C /* BlogDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D792B1DC2AB1600C5230C /* BlogDetailTableViewCell.m */; };
 		182D792E1DC2AB1600C5230C /* BlogDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182D792C1DC2AB1600C5230C /* BlogDetailTableViewCell.xib */; };
-		A5DF43C6C6D28B9FA4AEA926 /* libPods-CheerUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */; };
+		321FA24992520BF5A683AFAE /* libPods-CheerUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 384E5FF70FE550792EF4249B /* libPods-CheerUp.a */; };
 		D4CCC5851DD1C3E400C20D0E /* check_whats_nearby_img.png in Resources */ = {isa = PBXBuildFile; fileRef = D4CCC5841DD1C3E400C20D0E /* check_whats_nearby_img.png */; };
+		EE31FCBC623CD126C4864D68 /* libPods-CheerUpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D3F2ABB7AC60701B9C7BFC /* libPods-CheerUpTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,10 +175,16 @@
 		182D792A1DC2AB1600C5230C /* BlogDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailTableViewCell.h; sourceTree = "<group>"; };
 		182D792B1DC2AB1600C5230C /* BlogDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailTableViewCell.m; sourceTree = "<group>"; };
 		182D792C1DC2AB1600C5230C /* BlogDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogDetailTableViewCell.xib; sourceTree = "<group>"; };
-		1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.debug.xcconfig"; sourceTree = "<group>"; };
-		71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.release.xcconfig"; sourceTree = "<group>"; };
+		384E5FF70FE550792EF4249B /* libPods-CheerUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C5ACB8470B6E90EA89046D /* Pods-CheerUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.release.xcconfig"; sourceTree = "<group>"; };
+		4D88AF13862CA9996E3CC8C4 /* Pods-CheerUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUpUITests/Pods-CheerUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B910190B0796C7C9136ACFC /* Pods-CheerUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp.debug.xcconfig"; sourceTree = "<group>"; };
+		73F13E12D19E55CE4F55A2A3 /* Pods-CheerUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUpTests/Pods-CheerUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F94FA8338D4DCF9B4FC87A7 /* Pods-CheerUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUpTests/Pods-CheerUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1D3F2ABB7AC60701B9C7BFC /* libPods-CheerUpTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUpTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEABE36D3E112AB9B143631 /* libPods-CheerUpUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUpUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BEF8830F999CBE2410418A /* Pods-CheerUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheerUpUITests/Pods-CheerUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4CCC5841DD1C3E400C20D0E /* check_whats_nearby_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_whats_nearby_img.png; sourceTree = "<group>"; };
-		D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheerUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DF43C6C6D28B9FA4AEA926 /* libPods-CheerUp.a in Frameworks */,
+				321FA24992520BF5A683AFAE /* libPods-CheerUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE31FCBC623CD126C4864D68 /* libPods-CheerUpTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F778FA440F2985EF5007B54 /* libPods-CheerUpUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +239,8 @@
 				182991251DBE8CBD008A8C20 /* CheerUpTests */,
 				182991301DBE8CBD008A8C20 /* CheerUpUITests */,
 				1829910A1DBE8CBD008A8C20 /* Products */,
-				A3D37A8C0E9D482B8C5DB109 /* Pods */,
-				EAC520A5484011B88E79E99C /* Frameworks */,
+				8D814E5E7B7E77978912C2F6 /* Pods */,
+				32CE1F94BB06962FB11738E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,21 +387,27 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		A3D37A8C0E9D482B8C5DB109 /* Pods */ = {
+		32CE1F94BB06962FB11738E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */,
-				71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EAC520A5484011B88E79E99C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D4FE8FFA1354D1E2321F4E72 /* libPods-CheerUp.a */,
+				384E5FF70FE550792EF4249B /* libPods-CheerUp.a */,
+				A1D3F2ABB7AC60701B9C7BFC /* libPods-CheerUpTests.a */,
+				AAEABE36D3E112AB9B143631 /* libPods-CheerUpUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D814E5E7B7E77978912C2F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B910190B0796C7C9136ACFC /* Pods-CheerUp.debug.xcconfig */,
+				41C5ACB8470B6E90EA89046D /* Pods-CheerUp.release.xcconfig */,
+				73F13E12D19E55CE4F55A2A3 /* Pods-CheerUpTests.debug.xcconfig */,
+				9F94FA8338D4DCF9B4FC87A7 /* Pods-CheerUpTests.release.xcconfig */,
+				4D88AF13862CA9996E3CC8C4 /* Pods-CheerUpUITests.debug.xcconfig */,
+				C0BEF8830F999CBE2410418A /* Pods-CheerUpUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,12 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182991361DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUp" */;
 			buildPhases = (
-				A1B37E10DAA7F490CF327D99 /* Check Pods Manifest.lock */,
+				EC9EA6A54953D284835EAA39 /* [CP] Check Pods Manifest.lock */,
 				182991051DBE8CBD008A8C20 /* Sources */,
 				182991061DBE8CBD008A8C20 /* Frameworks */,
 				182991071DBE8CBD008A8C20 /* Resources */,
-				550E9FC15E878F4FFCBA03F0 /* Embed Pods Frameworks */,
-				45FC30CF884D8EC4D307EA2C /* Copy Pods Resources */,
+				6FE6F616C750632101337125 /* [CP] Embed Pods Frameworks */,
+				17E8A4222AC1B34D30A28416 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,9 +437,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 182991391DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUpTests" */;
 			buildPhases = (
+				556E2BD736CC5E8ABA84219B /* [CP] Check Pods Manifest.lock */,
 				1829911E1DBE8CBD008A8C20 /* Sources */,
 				1829911F1DBE8CBD008A8C20 /* Frameworks */,
 				182991201DBE8CBD008A8C20 /* Resources */,
+				4C24E404C9B18AAB0FB8C01F /* [CP] Embed Pods Frameworks */,
+				DB7B8026B179FF6BBF727306 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,9 +458,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1829913C1DBE8CBD008A8C20 /* Build configuration list for PBXNativeTarget "CheerUpUITests" */;
 			buildPhases = (
+				0639735EF7ABEB5C429F042A /* [CP] Check Pods Manifest.lock */,
 				182991291DBE8CBD008A8C20 /* Sources */,
 				1829912A1DBE8CBD008A8C20 /* Frameworks */,
 				1829912B1DBE8CBD008A8C20 /* Resources */,
+				A058F2F064B144D4767EB0EE /* [CP] Embed Pods Frameworks */,
+				3C8C1A8916C12BB506047AC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -567,14 +589,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45FC30CF884D8EC4D307EA2C /* Copy Pods Resources */ = {
+		0639735EF7ABEB5C429F042A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		17E8A4222AC1B34D30A28416 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,14 +619,59 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		550E9FC15E878F4FFCBA03F0 /* Embed Pods Frameworks */ = {
+		3C8C1A8916C12BB506047AC6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUpUITests/Pods-CheerUpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C24E404C9B18AAB0FB8C01F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUpTests/Pods-CheerUpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		556E2BD736CC5E8ABA84219B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE6F616C750632101337125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,19 +679,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUp/Pods-CheerUp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1B37E10DAA7F490CF327D99 /* Check Pods Manifest.lock */ = {
+		A058F2F064B144D4767EB0EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUpUITests/Pods-CheerUpUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7B8026B179FF6BBF727306 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheerUpTests/Pods-CheerUpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC9EA6A54953D284835EAA39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -771,7 +883,7 @@
 		};
 		182991371DBE8CBD008A8C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E44D15EB09A08FDA630E60A /* Pods-CheerUp.debug.xcconfig */;
+			baseConfigurationReference = 6B910190B0796C7C9136ACFC /* Pods-CheerUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
@@ -782,13 +894,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eb9abf75-ff4e-4901-afe1-c18f0a1b337b";
+				PROVISIONING_PROFILE = "8e133e7a-82e2-4316-ac74-8b09b1512bd2";
 			};
 			name = Debug;
 		};
 		182991381DBE8CBD008A8C20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71F710293155FF6CA20E423C /* Pods-CheerUp.release.xcconfig */;
+			baseConfigurationReference = 41C5ACB8470B6E90EA89046D /* Pods-CheerUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Swapnil Harkanth (CZA6DXR72T)";
@@ -799,12 +911,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stardeep.CheerUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "eb9abf75-ff4e-4901-afe1-c18f0a1b337b";
+				PROVISIONING_PROFILE = "8e133e7a-82e2-4316-ac74-8b09b1512bd2";
 			};
 			name = Release;
 		};
 		1829913A1DBE8CBD008A8C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F13E12D19E55CE4F55A2A3 /* Pods-CheerUpTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CheerUpTests/Info.plist;
@@ -817,6 +930,7 @@
 		};
 		1829913B1DBE8CBD008A8C20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F94FA8338D4DCF9B4FC87A7 /* Pods-CheerUpTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CheerUpTests/Info.plist;
@@ -829,6 +943,7 @@
 		};
 		1829913D1DBE8CBD008A8C20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D88AF13862CA9996E3CC8C4 /* Pods-CheerUpUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CheerUpUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -840,6 +955,7 @@
 		};
 		1829913E1DBE8CBD008A8C20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BEF8830F999CBE2410418A /* Pods-CheerUpUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = CheerUpUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
